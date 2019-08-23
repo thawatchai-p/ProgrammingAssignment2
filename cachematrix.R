@@ -32,5 +32,5 @@ cacheSolve <- function(x, ...) {
         }
         data <- x$getMatrix()
         InvMat <- solve(data, ...) ## solve(X) will return inverse
-        x$setInverse(inverse)
+        x$setInverse(InvMat)
 }
